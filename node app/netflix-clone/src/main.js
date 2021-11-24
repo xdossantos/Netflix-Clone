@@ -11,5 +11,15 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: { App },
+  data: {
+    myList: [],
+    currentSelection: {}
+  },
+  methods : {
+    addItem() {
+        this.myList.push(this.currentSelection)
+    }
+}
+
 })
