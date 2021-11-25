@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
+      <img id="netflixLogo" src="./assets/logo.png" alt="Vue.js PWA">
     </header>
     <main>
       <router-view></router-view>
@@ -49,5 +49,10 @@ header span {
   font-weight: 400;
   box-sizing: border-box;
   padding-top: 16px;
+}
+
+#netflixLogo {
+  width:100px;
+  height: auto
 }
 </style>
